@@ -1,0 +1,404 @@
+* {
+  font-family: "Lato";
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+
+nav {
+  z-index: 1;
+  background: transparent;
+  padding: 0 50px;
+}
+.nav-link {
+  color: white;
+}
+.navbar-toggler svg {
+  color: white;
+}
+.navbar-not-home {
+  background-color: #405628;
+}
+
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 30rem;
+  width: 100%;
+  overflow: hidden;
+  margin-top: -90px;
+  z-index: 0;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+header .judul {
+  letter-spacing: 0.225em;
+  font-weight: 900;
+  color: #ce9e70;
+}
+header .desc {
+  font-weight: 300;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(64, 86, 40, 0.75) 51.51%,
+    rgba(196, 196, 196, 0) 100%
+  );
+  opacity: 0.5;
+  z-index: 1;
+}
+.judul {
+  color: #405628;
+  letter-spacing: 0.255em;
+  font-weight: bold;
+}
+
+/* solusi */
+.solusi {
+  margin-top: -30px;
+  z-index: 2;
+}
+.solusi .box {
+  text-align: center;
+  background: linear-gradient(
+      360deg,
+      #ffffff 47.13%,
+      rgba(255, 255, 255, 0) 83.49%
+    ),
+    linear-gradient(355.69deg, #ffffff -5.77%, rgba(255, 255, 255, 0.1) 90.72%);
+  box-shadow: 0px 4px 5px 1px rgba(171, 194, 212, 0.2);
+  backdrop-filter: blur(12px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 12px;
+}
+.solusi .judul {
+  font-weight: 500;
+  letter-spacing: normal;
+}
+.solusi .desc {
+  font-weight: 300;
+  color: #898989;
+  font-size: 14px;
+}
+.solusi a {
+  color: #405628;
+  font-weight: bold;
+  border: 0.6px solid #405628;
+  border-radius: 6px;
+  padding: 8px 25px;
+}
+.vertical-dotted {
+  margin: 20px auto;
+  border-left: 3px dotted #c4c4c4;
+  width: 2px;
+  height: 5rem;
+}
+
+/* key */
+.key {
+  color: #474747;
+}
+.key span {
+  font-weight: 300;
+}
+.key a {
+  color: #ffffff;
+  background: #45562f;
+  box-shadow: 0px 2px 4px #90b39b;
+  border-radius: 6px;
+  padding: 8px 40px;
+}
+
+/* owl carousel */
+.owl-centered .owl-item {
+  display: inline-block;
+  float: none;
+  vertical-align: middle;
+}
+
+/* teknologi */
+.teknologi {
+  background: #fafafa;
+}
+.teknologi .teknologi-carousel .owl-stage {
+  margin: 20px 0;
+}
+.teknologi .teknologi-carousel .item {
+  background: #ffffff;
+  box-shadow: -4px -4px 6px rgba(255, 255, 255, 0.5),
+    4px 4px 6px rgba(171, 194, 212, 0.599836);
+  border-radius: 15px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+}
+.teknologi .teknologi-carousel img {
+  justify-self: center;
+  width: auto !important;
+  max-height: 110px;
+  align-self: center;
+  padding: 20px;
+}
+
+/* sertifikasi */
+.sertifikasi .owl-prev,
+.sertifikasi .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block !important;
+  /* background-color: teal !important; */
+}
+.sertifikasi .owl-nav svg {
+  width: 32px;
+  height: 32px;
+  padding: 8px;
+  border-radius: 50%;
+  background: #45562f;
+  color: #dadada;
+}
+.sertifikasi .owl-prev {
+  left: -10px;
+}
+.sertifikasi .owl-next {
+  right: -10px;
+}
+.sertifikasi .owl-prev i,
+.sertifikasi .owl-next i {
+  transform: scale(2, 5);
+  color: #ccc;
+}
+.sertifikasi .sertifikasi-carousel .item {
+  display: flex;
+  justify-content: center;
+}
+.sertifikasi .sertifikasi-carousel img {
+  justify-self: center;
+  width: auto !important;
+  /* max-height: 110px; */
+  align-self: center;
+  padding: 20px;
+}
+
+/* tentang kami */
+.tentang-kami .judul {
+  color: #ce9e70;
+  letter-spacing: 0.35em;
+}
+.tentang-kami .desc {
+  color: white;
+}
+.parallax {
+  /* The image used */
+  background-image: url("/assets/img/bg-tentangkami.jpg");
+
+  /* Set a specific height */
+  min-height: 400px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.centered {
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+/* klien */
+.klien img {
+  flex: 0 1 calc(16.6% - 8px);
+}
+
+/* --------------- footer --------------- */
+footer {
+  color: white;
+  background-color: #45562f;
+  letter-spacing: 0.5px;
+}
+.footer {
+  padding: 50px 150px;
+}
+footer h6 {
+  font-weight: 800;
+}
+footer .alamat {
+  font-weight: 300;
+}
+footer a {
+  color: white;
+  margin-bottom: 8px;
+}
+footer .socmed {
+  margin-right: 14px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+footer .socmed .iconify {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  padding: 0.5em 0.6em;
+}
+.copyright {
+  padding: 10px 160px;
+  font-size: 12px;
+  color: #ce9e70;
+}
+
+/* --------------- hubungi kami --------------- */
+.hubungi-kami {
+  padding: 0 100px;
+}
+.hubungi-kami input,
+.hubungi-kami textarea {
+  background: #f1f4f5;
+  border: none;
+}
+
+.hubungi-kami .socmed {
+  margin-right: 14px;
+  color: #45562f;
+  border: 1px solid #45562f;
+  border-radius: 50%;
+}
+.hubungi-kami .iconify {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  padding: 0.5em 0.6em;
+}
+.hubungi-kami .btn-submit {
+  background: #45562f;
+  border-radius: 9px;
+  color: white;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  /* CSS */
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* CSS */
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* CSS */
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* CSS */
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  /* CSS */
+  /* tentang kami */
+  .parallax {
+    min-height: 400px;
+  }
+  .centered {
+    top: 0;
+    left: 0;
+    transform: translate(0%, 0%);
+    padding: 20px 14px;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 0) and (max-width: 480px) {
+  nav {
+    padding: 0;
+    background: black;
+  }
+  header {
+    margin-top: 0;
+  }
+
+  /* tentang kami */
+  .parallax {
+    min-height: 590px;
+  }
+  .centered {
+    top: 0;
+    left: 0;
+    transform: translate(0%, 0%);
+    padding: 20px 14px;
+  }
+
+  /* footer */
+  .footer {
+    padding: 50px 14px;
+  }
+  .copyright {
+    padding: 10px 14px;
+  }
+
+  /* --------------- hubungi kami --------------- */
+  .hubungi-kami {
+    padding: 18px;
+  }
+  .hubungi-kami .iconify {
+    width: 38px;
+    height: 38px;
+  }
+}
